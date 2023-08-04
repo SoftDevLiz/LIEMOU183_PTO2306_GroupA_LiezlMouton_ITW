@@ -1,0 +1,19 @@
+h1,
+h2,
+h3,
+p,
+li {
+  font-family: "DM Sans", sans-serif;
+}
+
+h3 {
+  color: rgb(76, 49, 255);
+}
+
+.skills {
+  color: rgb(76, 49, 255);
+}
+
+.highlight {
+  background-color: rgb(255, 240, 219);
+}
