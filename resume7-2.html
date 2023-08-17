@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Digital Resumé</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./stylesheet.css" />
+    <link rel="icon" type="image/x-icon" href="images/favicon_io/favicon.ico" />
+  </head>
+  <body>
+    <div id="hero">
+    <header>
+      <h1 class="mid">Liezl Mouton</h1>
+    </header>
+
+    <picture>
+        <source srcset="https://i.postimg.cc/VNHVkBXV/small.jpg" media="(max-width: 800px)">
+    <source srcset="https://i.postimg.cc/v8KNszGg/Medium.jpg" media="(max-width: 1000px)">
+    
+    <img src="https://i.postimg.cc/WzsbbvG8/Default.jpg" alt="Liz">
+    
+
+    </picture>
+
+    <p class="mid">An introductory personal statement</p>
+</div>
+    <nav id="navbar" class="bgcolor">
+      <h2>Menu</h2>
+
+      <a href="#Edu">Education</a>
+      <a href="#Exp">Experience</a>
+      <a href="#Skills">Skills</a>
+      <a href="#Contact">Contact Me</a>
+      <a href="#Socials">Socials</a>
+    </nav>
+    <main>
+      <article>
+        <section>
+          <h2 id="Edu">Education</h2>
+          <h3>
+            Software Developement at
+            <a
+              href="https://www.linkedin.com/school/codespaceza/"
+              target="_blank"
+              >CodeSpace Academy</a
+            >
+          </h3>
+          <p>
+            Lorem ipsum <span class="highlight">dolor sit</span> amet,
+            consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+            labore et dolore magna aliqua. Ut enim ad minim veniam, quis <br />
+            nostrud exercitation ullamco
+            <span class="highlight"
+              >laboris nisi ut aliquip ex ea commodo consequat.</span
+            >
+            Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu
+            <br />
+            fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est
+            laborum.
+          </p>
+          <h3>Qualification 2</h3>
+          <p>
+            Lorem ipsum dolor sit amet,
+            <span class="highlight">consectetur adipiscing elit</span>, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis <br />
+            nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit
+            <span class="highlight">
+              in voluptate velit esse cillum dolore eu</span
+            >
+            <br />
+            fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est
+            laborum.
+          </p>
+        </section>
+        <section>
+          <h2 id="Exp">Experience</h2>
+          <h3>Job 1</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+            <span class="highlight"
+              >sed do eiusmod tempor incididunt ut labore et dolore</span
+            >
+            magna aliqua. Ut enim ad minim veniam, quis <br />
+            nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit
+            <span class="highlight">in voluptate</span> velit esse cillum dolore
+            eu <br />
+            fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est
+            laborum.
+          </p>
+          <h3>Job 2</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim <span class="highlight">veniam, quis</span> <br />
+            <span class="highlight">nostrud exercitation ullamco laboris</span
+            >nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu <br />
+            fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est
+            laborum.
+          </p>
+        </section>
+
+        <section class="bgcolor">
+          <h2 class="mid" id="Skills">Skills</h2>
+          <div id="centeralign">
+          <ol>
+            <li><span class="skills">Skill 1</span></li>
+            <li><span class="skills">Skill 2</span></li>
+            <li><span class="skills">Skill 3</span></li>
+            <li><span class="skills">Skill 4</span></li>
+          </ol>
+        </div>
+        </section>
+        <nav class="mid">
+          <h2 id="Socials">Socials</h2>
+          <a href="https://www.linkedin.com/in/liezlmouton/" target="_blank"
+            >LinkedIn</a
+          ></br>
+          <a href="https://github.com/SoftDevLiz" target="_blank">GitHub</a>
+        </nav>
+      </article>
+    </main>
+    <footer>
+      
+      <h2 class="mid" id="Contact">Contact Me</h2>
+      <div class="form">
+      <form action="https://formsubmit.co/liz.mouton1@gmail.com" method="POST">
+
+        <label for="name">Name</label>
+        <input type="text" id="name" placeholder="What would you like to be called?" required>
+
+        <label for="subject">Subject</label>
+        <select name="subject" required>
+            <option value="General">General</option>
+            <option value="Work">Work/hire</option>
+            <option value="CV">Portfolio</option>
+        </select>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" required>
+
+        
+        <textarea cols="50" rows="7" placeholder="Type your message here"></textarea>
+
+      </form>
+    </div>
+    </footer>
+  </body>
+</html>
