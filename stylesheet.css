@@ -2,7 +2,8 @@ h1,
 h2,
 h3,
 p,
-li {
+li,
+form {
   font-family: "DM Sans", sans-serif;
 }
 
@@ -55,4 +56,9 @@ h2 {
 ol {
   display: inline-block;
   text-align: center;
+}
+
+form {
+  display: grid;
+  gap: 20px;
 }
