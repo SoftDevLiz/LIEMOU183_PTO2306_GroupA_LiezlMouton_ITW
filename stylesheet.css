@@ -7,6 +7,60 @@ form {
   font-family: "DM Sans", sans-serif;
 }
 
+h1,
+#intro {
+  color: white;
+}
+/* Font-size change for mobile */
+@media (max-width: 550px) {
+  p,
+  li,
+  form {
+    font-size: 16px;
+  }
+
+  h1 {
+    font-size: 32px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  h3 {
+    font-size: 18px;
+  }
+
+  #navelements {
+    font-size: 16px;
+  }
+}
+
+/* Font-size change for anything larger than mobile */
+@media (min-width: 550px) {
+  p,
+  li,
+  form {
+    font-size: 18px;
+  }
+
+  h1 {
+    font-size: 35px;
+  }
+
+  h2 {
+    font-size: 25px;
+  }
+
+  h3 {
+    font-size: 20px;
+  }
+
+  #navelements {
+    font-size: 18px;
+  }
+}
+
 h3 {
   color: rgb(76, 49, 255);
 }
@@ -23,13 +77,20 @@ h3 {
   background-color: rgba(255, 200, 200, 0.319);
 }
 
-img {
+#Lizmain {
   width: 350px;
   display: block;
   margin-left: auto;
   margin-right: auto;
-  border-radius: 200px;
-  border-style: solid;
+  border-radius: 400px;
+}
+
+/* Why won't this work? I've tested it in all different kinds of ways, can't get it to execute */
+@media (max-width: 800px) {
+  #smallimg {
+    width: 100px;
+    height: 100px;
+  }
 }
 
 .mid {
@@ -65,6 +126,77 @@ form {
 }
 
 #hero {
-  background: white
-    url(https://i.postimg.cc/kMBPdDP4/54866-Abstract-Sw-irl-HD-Wallpaper.jpg);
+  background: white url(https://i.postimg.cc/dtTMLRCJ/programming-14.jpg);
+  background-size: cover;
+}
+
+/* Socials logo animation */
+@keyframes twirlygit {
+  0% {
+  }
+
+  25% {
+    transform: rotate3d(0, 25, 0, 500deg);
+  }
+
+  50% {
+  }
+  100% {
+  }
+}
+
+#gitlogo {
+  animation-name: twirlygit;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes twirlylink {
+  0% {
+  }
+
+  25% {
+    transform: rotate3d(0, 100, 0, 200deg);
+  }
+
+  50% {
+  }
+  100% {
+  }
+}
+
+#linklogo {
+  animation-name: twirlylink;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes twirlyinsta {
+  0% {
+  }
+
+  25% {
+    transform: rotate3d(0, 50, 0, 300deg);
+  }
+
+  50% {
+  }
+  100% {
+  }
+}
+
+#instalogo {
+  animation-name: twirlyinsta;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+
+.row {
+  display: flex;
+}
+
+/*how in the hell do I get them next to each other idk halp */
+.column {
+  flex: 2px;
+  padding: 20px;
 }
